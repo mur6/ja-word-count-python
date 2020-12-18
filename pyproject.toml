@@ -6,6 +6,8 @@ authors = ["***"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+SudachiPy = "^0.4.9"
+SudachiDict-core = "^20200722"
 
 [tool.poetry.dev-dependencies]
 
