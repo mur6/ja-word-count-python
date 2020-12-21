@@ -13,10 +13,12 @@ def word_count(input_text):
 
 def main():
     count = 0
-    with Path(sys.argv[1]).open() as f:
+    filename = sys.argv[1]
+    with Path(filename).open() as f:
         for line in f:
             line = line.strip("\n")
             count += word_count(line)
-    print(count)
+    print(f" {count} {filename}")
 
-main()
+if __name__ == '__main__':
+    main()
